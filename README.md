@@ -6,9 +6,11 @@ Clean Architecture implementation example in ASP .NET Core Web API
 Script to create table
 ---------------------------------------------------------------------------------
 CREATE TABLE [dbo].[User](
+
 	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[Email] [varchar](50) NOT NULL,
 	[Name] [varchar](50) NOT NULL,
+ 
  CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED 
 (
 	[ID] ASC
