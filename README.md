@@ -1,6 +1,5 @@
 # CleanArchitecture
 Clean Architecture implementation example in ASP .NET Core Web API
-
 # Dapper for ORM and SQL Server
 
 Script to create table
@@ -28,9 +27,11 @@ GO
 
 # JWT for Authentification
 Example Admin USER
+
         User: admin
         Pass: admin
         
 Example Basic USER
+
         User: user
         Pass: user
