@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Migrations\**" />
+      <EmbeddedResource Remove="Migrations\**" />
+      <None Remove="Migrations\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CleanArchitecture.Application\CleanArchitecture.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.151" />
+      <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    </ItemGroup>
+
+</Project>
